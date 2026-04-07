@@ -21,7 +21,7 @@ float PIDController_Update(PIDController *pid, float setpoint, float measurement
 	/* Proportional */
     float proportional = pid->Kp * error;
 
-	/* Integral */
+	/* Integral (trapezoidal integration)*/
     pid->integrator = pid->integrator + 0.5f * pid->Ki * pid->T * (error + pid->prevError);
 
 	/* Anti-wind-up via integrator clamping */
