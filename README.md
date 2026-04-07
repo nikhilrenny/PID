@@ -96,7 +96,7 @@ Designed for embedded targets — tested on STM32 (ARM Cortex-M). Should work on
 ## Credits
 
 Original implementation by [pms67](https://github.com/pms67/PID).  
-This fork removes documentation files and adapts the code for direct embedded integration.
+.
 
 ---
 
